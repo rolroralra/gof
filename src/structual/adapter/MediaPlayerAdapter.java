@@ -1,14 +1,15 @@
-package structual.adapter.impl;
+package structual.adapter;
 
 import lombok.Getter;
-import structual.adapter.AdvancedMediaPlayer;
-import structual.adapter.MediaPlayer;
+import structual.adapter.impl.MkvPlayer;
+import structual.adapter.impl.Mp4Player;
 
 public class MediaPlayerAdapter implements MediaPlayer {
     AdvancedMediaPlayer adapter;
 
     public enum AdvancedMediaType {
-        MKV(MkvPlayer.class, null), MP4(Mp4Player.class, null);
+        MKV(MkvPlayer.class, null),
+        MP4(Mp4Player.class, null);
 
         @Getter
         private Class<?> advancedMediaPlayerClazz;

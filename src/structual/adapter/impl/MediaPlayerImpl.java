@@ -1,6 +1,7 @@
 package structual.adapter.impl;
 
 import structual.adapter.MediaPlayer;
+import structual.adapter.MediaPlayerAdapter;
 
 public class MediaPlayerImpl implements MediaPlayer {
     private MediaPlayer mediaPlayAdapter = null;
