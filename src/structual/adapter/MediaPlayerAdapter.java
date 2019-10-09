@@ -4,7 +4,14 @@ import lombok.Getter;
 import structual.adapter.impl.MkvPlayer;
 import structual.adapter.impl.Mp4Player;
 
+/*
+* Adapter pattern makes things work after they are designed!
+* Bridge pattern makes them work before they are!
+* */
 public class MediaPlayerAdapter implements MediaPlayer {
+    /* Adapter Pattern
+    * Interconnect two incompatible interfaces. (AdvancedMediaPlayer & MediaPlayer)
+    * */
     AdvancedMediaPlayer adapter;
 
     public enum AdvancedMediaType {

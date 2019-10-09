@@ -1,5 +1,6 @@
 package structual.bridge.test;
 
+import structual.bridge.AbstractShape;
 import structual.bridge.Shape;
 import structual.bridge.impl.*;
 

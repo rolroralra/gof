@@ -1,9 +1,13 @@
 package structual.adapter.impl;
 
+import lombok.NonNull;
 import structual.adapter.MediaPlayer;
 import structual.adapter.MediaPlayerAdapter;
 
 public class MediaPlayerImpl implements MediaPlayer {
+    /* Use Adapter Pattern
+     * Interconnect two incompatible interfaces. (AdvancedMediaPlayer & MediaPlayer)
+     * */
     private MediaPlayer mediaPlayerAdapter = null;
 
     @Override
