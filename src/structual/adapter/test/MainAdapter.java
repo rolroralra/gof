@@ -1,6 +1,7 @@
 package structual.adapter.test;
 
 import structual.adapter.MediaPlayer;
+import structual.adapter.MediaPlayerAdapter;
 import structual.adapter.impl.MediaPlayerImpl;
 
 public class MainAdapter {
@@ -17,6 +18,9 @@ public class MainAdapter {
         mediaPlayer.play("test07","mP3");
         mediaPlayer.play("test08","AVI");
         mediaPlayer.play("test09","MKv");
+
+
+
     }
 
 }

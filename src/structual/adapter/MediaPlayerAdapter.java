@@ -39,6 +39,7 @@ public class MediaPlayerAdapter implements MediaPlayer {
             }
         }
     }
+
     @Override
     public void play(String fileName, String fileType) {
         for (AdvancedMediaType mediaType: AdvancedMediaType.values()) {

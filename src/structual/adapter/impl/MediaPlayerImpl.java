@@ -4,18 +4,19 @@ import structual.adapter.MediaPlayer;
 import structual.adapter.MediaPlayerAdapter;
 
 public class MediaPlayerImpl implements MediaPlayer {
-    private MediaPlayer mediaPlayAdapter = null;
+    private MediaPlayer mediaPlayerAdapter = null;
 
     @Override
     public void play(String fileName, String fileType) {
         /* Implementation by Adapter */
         for (MediaPlayerAdapter.AdvancedMediaType type : MediaPlayerAdapter.AdvancedMediaType.values()) {
             if (type.name().equalsIgnoreCase(fileType)) {
-                if (mediaPlayAdapter == null) {
-                    mediaPlayAdapter = new MediaPlayerAdapter();
+                if (mediaPlayerAdapter == null) {
+                    mediaPlayerAdapter = new MediaPlayerAdapter();
+                    System.out.println(mediaPlayerAdapter.getClass().getSimpleName() + " instanced!");
                 }
 
-                mediaPlayAdapter.play(fileName, fileType);
+                mediaPlayerAdapter.play(fileName, fileType);
                 return;
             }
         }
