@@ -3,7 +3,7 @@ bin/
 .projecet
 .settings/
 target/
-
+.idea/
 
 
 # Created by https://www.gitignore.io/api/java,maven,intellij
