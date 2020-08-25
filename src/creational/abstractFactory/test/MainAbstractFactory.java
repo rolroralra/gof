@@ -21,5 +21,12 @@ public class MainAbstractFactory {
         colorFactory.getColor("GREEN").fill();
         colorFactory.getColor("Blue").fill();
 
+
+        AbstractFactory dummyFactory = factoryProducer.getFactory("DUMMY");
+
+        dummyFactory.getShape("Circle").draw();
+        dummyFactory.getShape("Rectangle").draw();
+        dummyFactory.getShape("SQUARE").draw();
+
     }
 }

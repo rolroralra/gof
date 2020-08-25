@@ -2,19 +2,37 @@
 Gang of Four(Java Design Pattern)
 
 - Creational
-  - Factory
-  - AbstractFactory (with FactoryGenerator, FactoryProducer)
-  - Singleton & LazyHolder
-  - Builder
-  - Prototype (Cloneable)
+  - [x] Factory
+  - [x] AbstractFactory (with FactoryGenerator, FactoryProducer)
+  - [x] Singleton & LazyHolder
+  - [x] Builder
+  - [x] Prototype
 - Structual
-  - Adapter
-  - Bridge
-  - Decorator (Wrapper)
-  - Filter
-  - Composite
-  - Facade
-  - Proxy
-  - Flyweight (compared with Prototype)
+  - [x] Adapter
+  - [x] Bridge
+  - [x] Decorator (Wrapper)
+  - [ ] Filter
+  - [ ] Composite
+  - [ ] Facade
+  - [ ] Proxy
+  - [ ] Flyweight (compared with Prototype)
 - Behavioral
+  - [ ] ChainOfResponsibility (Logger)
+  - [ ] Command (Order, Invoker, Broker)
+  - [ ] Interpreter
+  - [ ] Iterator
+  - [ ] Mediator
+  - [ ] Memento
+  - [ ] Observer
+  - [ ] State
+  - [ ] Null Object
+  - [ ] Stategy
+  - [ ] Template
+  - [ ] Visitor
 - J2EE
+  - [ ] MVC
+  - [ ] Business Delegate
+  - [ ] Composite Entity
+  - [ ] Data Access Object (DAO)
+  - [ ] Front Controller
+  - [ ] Intercepting Filter

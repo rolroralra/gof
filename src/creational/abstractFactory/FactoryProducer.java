@@ -4,6 +4,8 @@ import creational.abstractFactory.impl.ColorFactoryImpl;
 import creational.abstractFactory.impl.ShapeFactoryImpl;
 import lombok.Getter;
 
+import java.util.Arrays;
+
 public class FactoryProducer {
 	/* LazyHolder Singleton Pattern */
 	private static class LazyHolder {
@@ -18,30 +20,43 @@ public class FactoryProducer {
 	
 	private enum FactoryType {
 		SHAPE(ShapeFactoryImpl.class),
+//		DUMMY(ShapeFactoryImpl.class),
 		COLOR(ColorFactoryImpl.class);
 		
 		@Getter
 		private final Class<?> factoryClazz;
 		
-		private FactoryType(Class<?> clazz) {
+		FactoryType(Class<?> clazz) {
 			this.factoryClazz = clazz;
 		}
 	}
 
 	public AbstractFactory getFactory(String factoryType) {
-		for (FactoryType type: FactoryType.values()) {
-			if (type.name().equalsIgnoreCase(factoryType)) {
-				try {
-					return (AbstractFactory) type.getFactoryClazz().newInstance();
-				} catch (InstantiationException e) {
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					e.printStackTrace();
-				}
-			}
+		AbstractFactory result = null;
+		try {
+			result = (AbstractFactory) Arrays.stream(FactoryType.values())
+					.filter(type -> factoryType.equalsIgnoreCase(type.name()))
+					.findFirst().get().getFactoryClazz().newInstance();
+		} catch (InstantiationException | IllegalAccessException e) {
+			e.printStackTrace();
 		}
 
-		return null;
+		return result;
+
+
+//		for (FactoryType type: FactoryType.values()) {
+//			if (type.name().equalsIgnoreCase(factoryType)) {
+//				try {
+//					return (AbstractFactory) type.getFactoryClazz().newInstance();
+//				} catch (InstantiationException e) {
+//					e.printStackTrace();
+//				} catch (IllegalAccessException e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		}
+//
+//		return null;
 	}
 
 
