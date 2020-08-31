@@ -3,7 +3,7 @@ Gang of Four(Java Design Pattern)
 
 - Creational
   - [x] [Factory](./src/creational/factory/test/MainFactory.java)
-  - [x] AbstractFactory (with FactoryGenerator, FactoryProducer)
+  - [x] [AbstractFactory (with FactoryGenerator, FactoryProducer)](./src/creational/abstractFactory/test/MainAbstractFactory.java)
   - [x] Singleton & LazyHolder
   - [x] Builder
   - [x] Prototype
@@ -14,7 +14,7 @@ Gang of Four(Java Design Pattern)
   - [ ] Filter
   - [ ] Composite
   - [ ] Facade
-  - [X] Proxy
+  - [X] [Proxy](./src/structural/proxy/test/MainProxy.java)
   - [ ] Flyweight (compared with Prototype)
 - Behavioral
   - [ ] ChainOfResponsibility (Logger)
