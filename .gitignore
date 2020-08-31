@@ -4,6 +4,7 @@ bin/
 .settings/
 target/
 .idea/
+gof.iml
 
 
 # Created by https://www.gitignore.io/api/java,maven,intellij

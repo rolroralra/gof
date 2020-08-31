@@ -1,4 +1,4 @@
-package creational.lazyHolder;
+package creational.singleton.lazyHolder;
 
 public class SingleObject {
 

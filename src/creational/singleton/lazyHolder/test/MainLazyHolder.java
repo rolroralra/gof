@@ -1,6 +1,6 @@
-package creational.lazyHolder.test;
+package creational.singleton.lazyHolder.test;
 
-import creational.lazyHolder.SingleObject;
+import creational.singleton.lazyHolder.SingleObject;
 
 public class MainLazyHolder {
     public static void main(String[] args) {
