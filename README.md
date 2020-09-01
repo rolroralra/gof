@@ -11,9 +11,9 @@ Gang of Four(Java Design Pattern)
   - [x] [Adapter](./src/structural/adapter)
   - [x] [Bridge](./src/structural/bridge)
   - [x] [Decorator (Wrapper)](./src/structural/decorator)
-  - [ ] Filter
+  - [ ] Filter(Cache)
   - [ ] Composite
-  - [ ] Facade
+  - [X] [Facade](./src/structural/facade)
   - [X] [Proxy](./src/structural/proxy)
   - [ ] Flyweight (compared with Prototype)
 - Behavioral
@@ -26,7 +26,7 @@ Gang of Four(Java Design Pattern)
   - [ ] Observer
   - [ ] State
   - [ ] Null Object
-  - [ ] Stategy
+  - [ ] Strategy
   - [ ] Template
   - [ ] Visitor
 - J2EE

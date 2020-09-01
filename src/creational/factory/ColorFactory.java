@@ -15,7 +15,7 @@ public class ColorFactory {
 		@Getter
 		private final Class<?> colorClazz;
 		
-		private ColorType(Class<?> colorClazz) {
+		ColorType(Class<?> colorClazz) {
 			this.colorClazz = colorClazz;
 		}
 	}

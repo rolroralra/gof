@@ -16,7 +16,7 @@ public class ShapeFactory {
 		@Getter
 		final private Class<?> clazz;
 		
-		private ShapeType(Class<?> shapeClass) {
+		ShapeType(Class<?> shapeClass) {
 			this.clazz = shapeClass;
 		}
 	}
