@@ -4,6 +4,7 @@ import creational.abstractFactory.impl.ColorFactoryImpl;
 import creational.abstractFactory.impl.ShapeFactoryImpl;
 import lombok.Getter;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 
 public class FactoryProducer {
@@ -36,8 +37,8 @@ public class FactoryProducer {
 		try {
 			result = (AbstractFactory) Arrays.stream(FactoryType.values())
 					.filter(type -> factoryType.equalsIgnoreCase(type.name()))
-					.findFirst().get().getFactoryClazz().newInstance();
-		} catch (InstantiationException | IllegalAccessException e) {
+					.findFirst().get().getFactoryClazz().getConstructor().newInstance();
+		} catch (InstantiationException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
 			e.printStackTrace();
 		}
 
