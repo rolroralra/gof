@@ -36,3 +36,5 @@ Gang of Four(Java Design Pattern)
   - [ ] Data Access Object (DAO)
   - [ ] Front Controller
   - [ ] Intercepting Filter
+  - [ ] Service Locator
+  - [ ] Transfer Object
