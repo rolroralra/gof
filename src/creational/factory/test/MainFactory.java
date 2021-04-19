@@ -1,7 +1,6 @@
 package creational.factory.test;
 
 import creational.factory.ColorFactory;
-import creational.abstractFactory.FactoryProducer;
 import creational.factory.ShapeFactory;
 import creational.factory.vo.Color;
 import creational.factory.vo.Shape;

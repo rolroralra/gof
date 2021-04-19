@@ -45,7 +45,7 @@ Gang of Four(Java Design Pattern)
   - [ ] Observer
   - [ ] State
   - [ ] Null Object
-  - [ ] Strategy
+  - [X] [Strategy](./src/behavioral/strategy)
   - [ ] Template
   - [ ] Visitor
 - J2EE

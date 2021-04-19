@@ -2,7 +2,6 @@ package creational.abstractFactory.test;
 
 import creational.abstractFactory.AbstractFactory;
 import creational.abstractFactory.FactoryProducer;
-import creational.abstractFactory.impl.ShapeFactoryImpl;
 
 public class MainAbstractFactory {
     public static void main(String[] args) {

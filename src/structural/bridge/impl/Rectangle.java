@@ -1,8 +1,8 @@
 package structural.bridge.impl;
 
 import lombok.Getter;
-import structural.bridge.DrawAPI;
 import structural.bridge.AbstractShape;
+import structural.bridge.DrawAPI;
 
 public class Rectangle extends AbstractShape {
     @Getter

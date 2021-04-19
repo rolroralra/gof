@@ -1,12 +1,10 @@
 package creational.builder.vo;
 
-import creational.builder.vo.Item;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Meal {
-    private List<Item> items = new ArrayList<Item>();
+    private List<Item> items = new ArrayList<>();
 
     public void addItem(Item item) {
         items.add(item);
