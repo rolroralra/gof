@@ -8,14 +8,14 @@ import java.util.List;
 
 @Data
 public class SortedList<T extends Comparable<T>> implements Printable {
-    private SortAlgorithm<T> sortAlgorithm;
+    private SortAlgorithm sortAlgorithm;
     private List<T> list;
 
     public SortedList(List<T> list) {
-        this(list, new SelectionSortAlgorithm<>());
+        this(list, new SelectionSortAlgorithm());
     }
 
-    public SortedList(List<T> list, SortAlgorithm<T> sortAlgorithm) {
+    public SortedList(List<T> list, SortAlgorithm sortAlgorithm) {
         this.list = new ArrayList<>(list);
         this.sortAlgorithm = sortAlgorithm;
     }
@@ -24,7 +24,7 @@ public class SortedList<T extends Comparable<T>> implements Printable {
         this.sortAlgorithm.sort(this.list);
     }
 
-    public void sort(SortAlgorithm<T> strategy) {
+    public void sort(SortAlgorithm strategy) {
         this.sortAlgorithm = strategy;
         strategy.sort(this.list);
     }
