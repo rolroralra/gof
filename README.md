@@ -63,7 +63,7 @@ Gang of Four(Java Design Pattern)
   - [ ] Mediator
   - [ ] Memento
   - [X] [Observer](./src/behavioral/observer)
-  - [ ] State
+  - [X] [State](./src/behavioral/state)
   - [ ] Null Object
   - [X] [Strategy](./src/behavioral/strategy)
   - [ ] Template
