@@ -4,9 +4,9 @@ import behavioral.strategy.SortAlgorithm;
 
 import java.util.List;
 
-public class SelectionSortAlgorithm<T extends Comparable<T>> implements SortAlgorithm<T> {
+public class SelectionSortAlgorithm implements SortAlgorithm {
     @Override
-    public void sort(List<T> original) {
+    public <T extends Comparable<T>> void sort(List<T> original) {
         int size = original.size();
         for (int i = 0; i < size; i++) {
             int index = i;
