@@ -42,7 +42,7 @@ Gang of Four(Java Design Pattern)
   - [ ] Iterator
   - [ ] Mediator
   - [ ] Memento
-  - [ ] Observer
+  - [X] [Observer](./src/behavioral/observer)
   - [ ] State
   - [ ] Null Object
   - [X] [Strategy](./src/behavioral/strategy)
