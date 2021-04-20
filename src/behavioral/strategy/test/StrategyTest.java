@@ -21,15 +21,15 @@ public class StrategyTest {
         System.out.println();
 
         SortedList[] sortedListArray = new SortedList[] {
-                new SortedList<>(list, new SelectionSortAlgorithm<>()),
-                new SortedList<>(list, new InsertionSortAlgorithm<>()),
-                new SortedList<>(list, new BubbleSortAlgorithm<>()),
+                new SortedList<>(list, new SelectionSortAlgorithm()),
+                new SortedList<>(list, new InsertionSortAlgorithm()),
+                new SortedList<>(list, new BubbleSortAlgorithm()),
         };
 
         Arrays.stream(sortedListArray).forEach(SortedList::sort);
         System.out.println("[SORTED ARRAY]");
         Arrays.stream(sortedListArray).forEach(SortedList::print);
 
-
     }
 }
+
