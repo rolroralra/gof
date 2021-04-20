@@ -12,7 +12,27 @@
 4. Interface Segregation Principle
 > [https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4_%EB%B6%84%EB%A6%AC_%EC%9B%90%EC%B9%99](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4_%EB%B6%84%EB%A6%AC_%EC%9B%90%EC%B9%99)
 5. Dependency Inversion Principle
-> [https://ko.wikipedia.org/wiki/%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84_%EC%97%AD%EC%A0%84_%EC%9B%90%EC%B9%99]
+> [https://ko.wikipedia.org/wiki/%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84_%EC%97%AD%EC%A0%84_%EC%9B%90%EC%B9%99](https://ko.wikipedia.org/wiki/%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84_%EC%97%AD%EC%A0%84_%EC%9B%90%EC%B9%99)
+  </p>
+</details>
+
+---
+## GRASP Principles
+> General Responsibility Assignment Software Patterns
+
+<details>
+  <summary>Details</summary>
+  <p>
+    
+1. Information Expert
+2. Creator
+3. Controller
+4. Low Coupling (Loose Coupling)
+5. High Cohesion
+6. Polymorphism
+7. Pure Fabrication
+8. Indirection
+9. Protected Variations
   </p>
 </details>
 
