@@ -59,7 +59,7 @@ Gang of Four(Java Design Pattern)
   - [ ] ChainOfResponsibility (Logger)
   - [ ] Command (Order, Invoker, Broker)
   - [ ] Interpreter
-  - [ ] Iterator
+  - [X] [Iterator](./src/behavioral/iterator)
   - [ ] Mediator
   - [ ] Memento
   - [X] [Observer](./src/behavioral/observer)
