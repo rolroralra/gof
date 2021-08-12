@@ -18,6 +18,7 @@
 
 ---
 ## GRASP Principles
+
 > General Responsibility Assignment Software Patterns
 
 <details>
