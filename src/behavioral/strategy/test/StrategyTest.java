@@ -1,9 +1,7 @@
 package behavioral.strategy.test;
 
 import behavioral.strategy.SortedList;
-import behavioral.strategy.impl.BubbleSortAlgorithm;
-import behavioral.strategy.impl.InsertionSortAlgorithm;
-import behavioral.strategy.impl.SelectionSortAlgorithm;
+import behavioral.strategy.impl.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,9 +19,11 @@ public class StrategyTest {
         System.out.println();
 
         SortedList[] sortedListArray = new SortedList[] {
-                new SortedList<>(list, new SelectionSortAlgorithm()),
-                new SortedList<>(list, new InsertionSortAlgorithm()),
-                new SortedList<>(list, new BubbleSortAlgorithm()),
+                new SortedList<>(new ArrayList<>(list), new SelectionSortAlgorithm()),
+                new SortedList<>(new ArrayList<>(list), new InsertionSortAlgorithm()),
+                new SortedList<>(new ArrayList<>(list), new BubbleSortAlgorithm()),
+                new SortedList<>(new ArrayList<>(list), new MergeSortAlgorithm()),
+                new SortedList<>(new ArrayList<>(list), new QuickSortAlgorithm())
         };
 
         Arrays.stream(sortedListArray).forEach(SortedList::sort);
