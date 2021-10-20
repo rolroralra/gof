@@ -18,7 +18,17 @@ public class ShoppingCartTest {
 		cart.addItem(item2);
 		
 		//pay by credit card
-		cart.pay("Jongdae Han", "1234567890123456", "786", "12/15");
+		switch (cart.getPayment()) {
+			case CREDIT_CARD_PAYMENT:
+				cart.pay("Jongdae Han", "1234567890123456", "786", "12/15");
+				break;
+			case KAKAO_PAYMENT:
+				cart.pay("rolroralra", "password");
+				break;
+			case NAVER_PAYMENT:
+				cart.pay("rolroralra", "password");
+				break;
+		}
 	}
 
 }

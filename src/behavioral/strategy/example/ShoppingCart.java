@@ -1,18 +1,16 @@
 package behavioral.strategy.example;
 
 
-
 import behavioral.strategy.example.impl.Payment;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
 
 	//List of items
-	List<Item> items;
-	Payment payment;
+	private List<Item> items;
+	private Payment payment;
 	
 	public ShoppingCart(){
 		this(Payment.getDefault());
@@ -21,6 +19,10 @@ public class ShoppingCart {
 	public ShoppingCart(Payment payment) {
 		this.items = new ArrayList<>();
 		this.payment = payment;
+	}
+
+	public Payment getPayment() {
+		return payment;
 	}
 
 	public void setPayment(Payment payment) {
@@ -42,10 +44,8 @@ public class ShoppingCart {
 		}
 		return sum;
 	}
-	
-	public void pay(String name, String ccNum, String cvv, String expiryDate){
-		int amount = calculateTotal();
-		payment.pay(this, name, ccNum, cvv, expiryDate);
-		System.out.println(amount +" paid with " + payment.name());
+
+	public void pay(Object... args) {
+		payment.pay(this, args);
 	}
 }
