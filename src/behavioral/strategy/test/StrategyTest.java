@@ -3,6 +3,7 @@ package behavioral.strategy.test;
 import behavioral.strategy.SortedList;
 import behavioral.strategy.impl.*;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.RepeatedTest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +11,8 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 public class StrategyTest {
-    public static void main(String[] args) {
+    @RepeatedTest(10)
+    public void test() {
         List<Integer> list = new ArrayList<Integer>(){{
             IntStream.range(0, 10).forEach(i -> add((int)(Math.random() * 20)));
         }};
@@ -19,6 +21,7 @@ public class StrategyTest {
         System.out.println(list);
         System.out.println();
 
+        @SuppressWarnings("rawtypes")
         SortedList[] sortedListArray = new SortedList[] {
                 new SortedList<>(new ArrayList<>(list), new SelectionSortAlgorithm()),
                 new SortedList<>(new ArrayList<>(list), new InsertionSortAlgorithm()),
