@@ -2,6 +2,7 @@ package behavioral.strategy.test;
 
 import behavioral.strategy.SortedList;
 import behavioral.strategy.impl.*;
+import org.assertj.core.api.Assertions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,6 +32,7 @@ public class StrategyTest {
         System.out.println("[SORTED ARRAY]");
         Arrays.stream(sortedListArray).forEach(SortedList::print);
 
+        Arrays.stream(sortedListArray).forEach(sortedList -> Assertions.assertThat(sortedList.getList()).isSorted());
     }
 }
 
