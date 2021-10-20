@@ -23,7 +23,8 @@ public class StrategyTest {
                 new SortedList<>(new ArrayList<>(list), new InsertionSortAlgorithm()),
                 new SortedList<>(new ArrayList<>(list), new BubbleSortAlgorithm()),
                 new SortedList<>(new ArrayList<>(list), new MergeSortAlgorithm()),
-                new SortedList<>(new ArrayList<>(list), new QuickSortAlgorithm())
+                new SortedList<>(new ArrayList<>(list), new QuickSortAlgorithm()),
+                new SortedList<>(new ArrayList<>(list), new HeapSortAlgorithm())
         };
 
         Arrays.stream(sortedListArray).forEach(SortedList::sort);
