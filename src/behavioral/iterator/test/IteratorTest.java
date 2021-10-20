@@ -5,6 +5,7 @@ import behavioral.iterator.Iterator;
 import behavioral.iterator.impl.IterableImpl;
 import lombok.Builder;
 import lombok.Data;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,8 @@ public class IteratorTest {
         private String document;
     }
 
-    public static void main(String[] args) {
+    @Test
+    void test_Iterator_Pattern() {
         List<DataDTO> list = new ArrayList<DataDTO>(){{
             add(DataDTO.builder().id(1).document("test").build());
             add(DataDTO.builder().id(2).document("test2").build());

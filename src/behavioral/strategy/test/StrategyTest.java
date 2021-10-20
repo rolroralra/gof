@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 
 public class StrategyTest {
     @RepeatedTest(10)
-    public void test() {
+    void test_Strategy_Pattern() {
         List<Integer> list = new ArrayList<Integer>(){{
             IntStream.range(0, 10).forEach(i -> add((int)(Math.random() * 20)));
         }};

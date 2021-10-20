@@ -6,6 +6,7 @@ import behavioral.observer.impl.SubjectImpl;
 import behavioral.observer.impl.SubjectImpl2;
 import lombok.Builder;
 import lombok.Data;
+import org.junit.jupiter.api.Test;
 
 import java.util.Observer;
 
@@ -18,7 +19,8 @@ public class ObserverTest {
         String document;
     }
 
-    public static void main(String[] args) {
+    @Test
+    void test_Observer_Pattern() {
         Document document = Document.builder()
                 .id(1)
                 .document("test")
