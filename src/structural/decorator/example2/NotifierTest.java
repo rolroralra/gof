@@ -16,8 +16,8 @@ public class NotifierTest {
         Notifier emailNotifier = new EmailNotifierDecorator(notifier);
         Notifier smsNotifier = new SmsNotifierDecorator(notifier);
 
-        kakaoTalkNotifier.notify("kakao talk message?!");
-        emailNotifier.notify("email message?!");
-        smsNotifier.notify("sms message?!");
+        kakaoTalkNotifier.notify("System Error Occurred!");
+        emailNotifier.notify("System Error Occurred!");
+        smsNotifier.notify("System Error Occurred!");
     }
 }

@@ -6,7 +6,7 @@ import structural.facade.impl.ShapeFacadeImpl;
 
 public class MainFacade {
     @Test
-    public void test_Facade_Pattern(String[] args) {
+    public void test_Facade_Pattern() {
         ShapeFacade shapeFacade = new ShapeFacadeImpl();
 
         shapeFacade.drawCircle();

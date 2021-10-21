@@ -38,12 +38,20 @@ public class MediaPlayerAdapter implements MediaPlayer {
         }
 
         public void play(String fileName) throws InstantiationException, IllegalAccessException {
-            if (this.name().equals(MKV.name())) {
-                this.getAdvancedMediaPlayer().playMkv(fileName);
+            switch (this) {
+                case MKV:
+                    this.getAdvancedMediaPlayer().playMkv(fileName);
+                    break;
+                case MP4:
+                    this.getAdvancedMediaPlayer().playMp4(fileName);
+                    break;
             }
-            else if (this.name().equals(MP4.name())) {
-                this.getAdvancedMediaPlayer().playMp4(fileName);
-            }
+//            if (this.name().equals(MKV.name())) {
+//                this.getAdvancedMediaPlayer().playMkv(fileName);
+//            }
+//            else if (this.name().equals(MP4.name())) {
+//                this.getAdvancedMediaPlayer().playMp4(fileName);
+//            }
         }
     }
 

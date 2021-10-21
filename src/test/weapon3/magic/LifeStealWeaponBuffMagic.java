@@ -11,6 +11,6 @@ public class LifeStealWeaponBuffMagic implements WeaponBuffMagicVisitor {
 
     @Override
     public void visit(AttackActivity attackActivity) {
-        System.out.println("함께 힘을 쏟아보자고.");
+        System.out.println("피가 굉장히 달곰한걸?!");
     }
 }
