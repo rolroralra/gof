@@ -1,11 +1,13 @@
 package structural.adapter.test;
 
+import org.junit.jupiter.api.Test;
 import structural.adapter.MediaPlayer;
 import structural.adapter.impl.MediaPlayerImpl;
 
 public class MainAdapter {
 
-    public static void main(String[] args) {
+    @Test
+    public void test_Adapter_Pattern() {
         MediaPlayer mediaPlayer = new MediaPlayerImpl();
 
         mediaPlayer.play("test01","avi");

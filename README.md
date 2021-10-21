@@ -58,7 +58,7 @@ Gang of Four(Java Design Pattern)
   - [x] [Flyweight (Cache)](./src/structural/flyweight)
 - Behavioral
   - [ ] ChainOfResponsibility (Logger)
-  - [ ] Command (Order, Invoker, Broker)
+  - [X] [Command (Command, Invoker, Receiver) - 행위의 객체화](./src/behavioral/command)
   - [ ] Interpreter
   - [X] [Iterator](./src/behavioral/iterator)
   - [X] [Mediator](./src/behavioral/mediator)
