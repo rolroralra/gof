@@ -11,7 +11,9 @@ import java.util.stream.IntStream;
 public class MainFilter {
     public static void main(String[] args) {
 
-        Filter defaultFilter = FilterImpl.defaultFilter();
+        @SuppressWarnings("rawtypes")
+//        Filter defaultFilter = FilterImpl.defaultFilter();    // Deprecated
+        Filter defaultFilter = Filter.getDefaultFilter();
 
         Filter<String> stringFilter = new FilterImpl<>(s -> s.length() < 5);
         Filter<String> defaultStringFilter = new FilterImpl<>();
@@ -48,10 +50,11 @@ public class MainFilter {
 
     }
 
+    @SuppressWarnings("rawtypes")
     public static void printFilteringResult(Iterable iterable, Filter filter) {
         StringJoiner sj = new StringJoiner(", ", "{", "}");
 
         filter.filter(iterable).forEach(obj -> sj.add(obj.toString()));
-        System.out.println(sj.toString());
+        System.out.println(sj);
     }
 }

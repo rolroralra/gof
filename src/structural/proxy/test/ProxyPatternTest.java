@@ -1,10 +1,12 @@
 package structural.proxy.test;
 
+import org.junit.jupiter.api.Test;
 import structural.proxy.Image;
 import structural.proxy.ProxyImage;
 
-public class MainProxy {
-    public static void main(String[] args) {
+public class ProxyPatternTest {
+    @Test
+    public void test_Proxy_Pattern() {
         Image image = new ProxyImage("test.png");
         image.display();
         image.display();

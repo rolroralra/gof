@@ -9,10 +9,10 @@ public abstract class Shape implements Cloneable {
     private int id;
 
     @Getter
-    private String type;
+    private final String type;
 
     protected Shape() {
-        this.type = this.getClass().getSimpleName();
+            this.type = this.getClass().getSimpleName();
     }
 
     abstract public void draw();
@@ -28,6 +28,6 @@ public abstract class Shape implements Cloneable {
 
     @Override
     public String toString() {
-        return new StringBuilder().append("Shape : ").append(this.getType()).toString();
+        return "Shape : " + this.getType();
     }
 }

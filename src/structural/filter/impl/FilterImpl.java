@@ -9,6 +9,8 @@ import java.util.stream.StreamSupport;
 public class FilterImpl<T> implements Filter<T> {
     Predicate<T> predicate;
 
+    @Deprecated
+    @SuppressWarnings("rawtypes")
     public static Filter defaultFilter() {
         return new FilterImpl(t -> true);
     }
@@ -23,7 +25,7 @@ public class FilterImpl<T> implements Filter<T> {
 
     @Override
     public Iterable<T> filter(Iterable<T> iterable) {
-        Stream stream = StreamSupport.stream(iterable.spliterator(), false).filter(predicate);
+        Stream<T> stream = StreamSupport.stream(iterable.spliterator(), false).filter(predicate);
 
         return stream::iterator;
     }
