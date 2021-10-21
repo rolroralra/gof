@@ -4,7 +4,7 @@ import creational.factory.vo.Shape;
 import org.junit.jupiter.api.Test;
 import structural.flyweight.ShapeFactory;
 
-public class MainFlyWeight {
+public class FlyWeightTest {
     @Test
     public void test_FlyWeight_Pattern() {
         ShapeFactory shapeFactory = new ShapeFactory();

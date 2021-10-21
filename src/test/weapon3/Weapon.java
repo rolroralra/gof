@@ -27,11 +27,11 @@ public abstract class Weapon {
         this.weaponBuffMagicVisitor = weaponBuffMagicVisitor;
     }
 
-    void attack() {
+    public void attack() {
         // Delegate
         attackActivity.accept(weaponBuffMagicVisitor);
     }
-    void equip() {
+    public void equip() {
         // Delegate
         equipActivity.accept(weaponBuffMagicVisitor);
     }

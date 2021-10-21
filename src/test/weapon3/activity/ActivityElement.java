@@ -13,4 +13,10 @@ public abstract class ActivityElement {
     }
 
     abstract public void accept(WeaponBuffMagicVisitor weaponBuffMagicVisitor);
+    @Override
+    public String toString() {
+        return "ActivityElement{" +
+                "weapon=" + weapon +
+                '}';
+    }
 }

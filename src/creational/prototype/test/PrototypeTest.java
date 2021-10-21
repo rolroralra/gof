@@ -4,7 +4,7 @@ import creational.prototype.Circle;
 import creational.prototype.ShapeCache;
 import org.junit.jupiter.api.Test;
 
-public class MainPrototype {
+public class PrototypeTest {
     @Test
     public void test_Prototype_Pattern() {
         System.out.println("Shape: " + ShapeCache.getShape(1).getType());
