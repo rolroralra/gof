@@ -1,5 +1,6 @@
 package structural.filter.test;
 
+import org.junit.jupiter.api.Test;
 import structural.filter.Filter;
 import structural.filter.impl.FilterImpl;
 
@@ -9,7 +10,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class MainFilter {
-    public static void main(String[] args) {
+    @Test
+    public void test_Filter_Pattern() {
 
         @SuppressWarnings("rawtypes")
 //        Filter defaultFilter = FilterImpl.defaultFilter();    // Deprecated

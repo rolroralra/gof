@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import structural.bridge.Shape;
 import structural.bridge.impl.*;
 
-public class MainBridge {
+public class BridgeTest {
     @Test
     public void test_Bridge_Pattern() {
         Shape circle = new Circle(2, 3, 4, new GreenDrawAPI());

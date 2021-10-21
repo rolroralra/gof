@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import structural.adapter.MediaPlayer;
 import structural.adapter.impl.MediaPlayerImpl;
 
-public class MainAdapter {
+public class AdapterTest {
 
     @Test
     public void test_Adapter_Pattern() {

@@ -9,8 +9,8 @@ public class EmailNotifierDecorator extends NotifierDecorator {
     }
 
     @Override
-    public void notifyMessage(String message) {
+    public void notify(String message) {
         System.out.println("Email sending...");
-        notifier.notifyMessage(message);
+        notifier.notify(message);
     }
 }

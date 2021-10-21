@@ -4,10 +4,12 @@ import creational.factory.vo.Circle;
 import creational.factory.vo.Rectangle;
 import creational.factory.vo.Shape;
 import creational.factory.vo.Square;
+import org.junit.jupiter.api.Test;
 import structural.decorator.impl.BorderedShapeDecorator;
 
-public class MainDecorator {
-    public static void main(String[] args) {
+public class DecoratorTest {
+    @Test
+    public void test_Decorator_Pattern() {
 
         /* Original Interface Call */
         Shape circle = new Circle();

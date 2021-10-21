@@ -9,8 +9,8 @@ public class KakaoTalkNotifierDecorator extends NotifierDecorator {
     }
 
     @Override
-    public void notifyMessage(String message) {
+    public void notify(String message) {
         System.out.println("KAKAO Talk message sending...");
-        notifier.notifyMessage(message);
+        notifier.notify(message);
     }
 }

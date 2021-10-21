@@ -16,8 +16,8 @@ public class NotifierTest {
         Notifier emailNotifier = new EmailNotifierDecorator(notifier);
         Notifier smsNotifier = new SmsNotifierDecorator(notifier);
 
-        kakaoTalkNotifier.notifyMessage("kakao talk message?!");
-        emailNotifier.notifyMessage("email message?!");
-        smsNotifier.notifyMessage("sms message?!");
+        kakaoTalkNotifier.notify("kakao talk message?!");
+        emailNotifier.notify("email message?!");
+        smsNotifier.notify("sms message?!");
     }
 }

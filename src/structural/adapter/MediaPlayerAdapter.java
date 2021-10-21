@@ -23,7 +23,7 @@ public class MediaPlayerAdapter implements MediaPlayer {
 
         private AdvancedMediaPlayer advancedMediaPlayer;
 
-        private AdvancedMediaType(Class<?> advancedMediaPlayerClazz, AdvancedMediaPlayer advancedMediaPlayer) {
+        AdvancedMediaType(Class<?> advancedMediaPlayerClazz, AdvancedMediaPlayer advancedMediaPlayer) {
             this.advancedMediaPlayerClazz = advancedMediaPlayerClazz;
             this.advancedMediaPlayer = advancedMediaPlayer;
         }
@@ -53,9 +53,7 @@ public class MediaPlayerAdapter implements MediaPlayer {
             if (mediaType.name().equalsIgnoreCase(fileType)) {
                 try {
                     mediaType.play(fileName);
-                } catch (InstantiationException e) {
-                    e.printStackTrace();
-                } catch (IllegalAccessException e) {
+                } catch (InstantiationException | IllegalAccessException e) {
                     e.printStackTrace();
                 }
             }
