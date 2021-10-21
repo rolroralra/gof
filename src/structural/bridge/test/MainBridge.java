@@ -1,10 +1,12 @@
 package structural.bridge.test;
 
+import org.junit.jupiter.api.Test;
 import structural.bridge.Shape;
 import structural.bridge.impl.*;
 
 public class MainBridge {
-    public static void main(String[] args) {
+    @Test
+    public void test_Bridge_Pattern() {
         Shape circle = new Circle(2, 3, 4, new GreenDrawAPI());
         circle.draw();
 
