@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Invoker {
-    private List<Order> orderList;
+    private final List<Order> orderList;
 
     public Invoker() {
         orderList = new ArrayList<>();
