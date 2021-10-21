@@ -12,9 +12,9 @@ public abstract class Weapon {
     @Getter
     @Setter
     private int power;
-    private final ActivityElement attackActivity;
-    private final ActivityElement equipActivity;
-    private WeaponBuffMagicVisitor weaponBuffMagicVisitor;
+    private final ActivityElement attackActivity;   // Bridge Pattern
+    private final ActivityElement equipActivity;    // Bridge Pattern
+    private WeaponBuffMagicVisitor weaponBuffMagicVisitor;  //
 
     public Weapon() {
         this.power = 0;
@@ -28,9 +28,11 @@ public abstract class Weapon {
     }
 
     void attack() {
+        // Delegate
         attackActivity.accept(weaponBuffMagicVisitor);
     }
     void equip() {
+        // Delegate
         equipActivity.accept(weaponBuffMagicVisitor);
     }
 
