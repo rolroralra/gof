@@ -61,7 +61,7 @@ Gang of Four(Java Design Pattern)
   - [ ] Command (Order, Invoker, Broker)
   - [ ] Interpreter
   - [X] [Iterator](./src/behavioral/iterator)
-  - [ ] Mediator
+  - [X] [Mediator](./src/behavioral/mediator)
   - [ ] Memento
   - [X] [Observer](./src/behavioral/observer)
   - [X] [State](./src/behavioral/state)
