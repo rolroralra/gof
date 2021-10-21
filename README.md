@@ -68,7 +68,7 @@ Gang of Four(Java Design Pattern)
   - [ ] Null Object
   - [X] [Strategy](./src/behavioral/strategy)
   - [ ] Template
-  - [ ] Visitor
+  - [X] [Visitor (Many Object with Many Algorithm, cf. Strategy Pattern)](./src/behavioral/visitor)
 - J2EE
   - [ ] MVC
   - [ ] Business Delegate
