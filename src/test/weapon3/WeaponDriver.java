@@ -1,27 +1,28 @@
 package test.weapon3;
 
 import org.junit.jupiter.api.Test;
-import test.weapon3.magic.LifeStealWeaponBuffMagic;
 import test.weapon3.magic.WeaponBuffMagic;
+
+import java.util.Arrays;
 
 public class WeaponDriver {
     @Test
     void test() {
         Weapon sword = new Sword();
-        sword.equip();
-        sword.attack();
+        Arrays.stream(WeaponBuffMagic.values()).forEach(weaponBuffMagic -> {
+            sword.setWeaponBuffMagicVisitor(weaponBuffMagic);
+            sword.equip();
+            sword.attack();
+            System.out.println();
+        });
+        System.out.println();
 
-//        sword.setWeaponBuffMagicVisitor(new LifeStealWeaponBuffMagic());
-        sword.setWeaponBuffMagicVisitor(WeaponBuffMagic.FLYING);
-        sword.equip();
-        sword.attack();
-
-        sword.setWeaponBuffMagicVisitor(WeaponBuffMagic.LIFE_STEAL);
-        sword.equip();
-        sword.attack();
-
-        sword.setWeaponBuffMagicVisitor(WeaponBuffMagic.LIGHT);
-        sword.equip();
-        sword.attack();
+        Weapon spear = new Spear();
+        Arrays.stream(WeaponBuffMagic.values()).forEach(weaponBuffMagic -> {
+            spear.setWeaponBuffMagicVisitor(weaponBuffMagic);
+            spear.equip();
+            spear.attack();
+            System.out.println();
+        });
     }
 }

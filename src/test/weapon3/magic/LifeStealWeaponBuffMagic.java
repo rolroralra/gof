@@ -3,6 +3,7 @@ package test.weapon3.magic;
 import test.weapon3.activity.AttackActivity;
 import test.weapon3.activity.EquipActivity;
 
+@Deprecated
 public class LifeStealWeaponBuffMagic implements WeaponBuffMagicVisitor {
     @Override
     public void visit(EquipActivity equipActivity) {
