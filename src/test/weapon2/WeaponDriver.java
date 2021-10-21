@@ -14,9 +14,10 @@ public class WeaponDriver {
 
         sword.equipment();
         sword.attack();
+        System.out.println();
 
         spear.equipment();
         spear.attack();
-
+        System.out.println();
     }
 }

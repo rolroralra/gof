@@ -10,7 +10,7 @@ public class EquipActivity extends ActivityElement {
 
     @Override
     public void accept(WeaponBuffMagicVisitor weaponBuffMagicVisitor) {
-        System.out.println(this.weapon.getClass().getSimpleName() + "을 장비했습니다.");
+        System.out.println(this.weapon.getClass().getSimpleName() + "를 장비했습니다.");
         weaponBuffMagicVisitor.visit(this);
     }
 }

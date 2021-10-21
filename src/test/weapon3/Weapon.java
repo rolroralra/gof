@@ -1,5 +1,7 @@
 package test.weapon3;
 
+import lombok.Getter;
+import lombok.Setter;
 import test.weapon3.activity.ActivityElement;
 import test.weapon3.activity.AttackActivity;
 import test.weapon3.activity.EquipActivity;
@@ -7,7 +9,9 @@ import test.weapon3.magic.WeaponBuffMagic;
 import test.weapon3.magic.WeaponBuffMagicVisitor;
 
 public abstract class Weapon {
-    private final int power;
+    @Getter
+    @Setter
+    private int power;
     private final ActivityElement attackActivity;
     private final ActivityElement equipActivity;
     private WeaponBuffMagicVisitor weaponBuffMagicVisitor;
@@ -28,5 +32,10 @@ public abstract class Weapon {
     }
     void equip() {
         equipActivity.accept(weaponBuffMagicVisitor);
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName();
     }
 }
