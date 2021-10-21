@@ -23,8 +23,6 @@ public class ShoppingCartTest {
 				cart.pay("Jongdae Han", "1234567890123456", "786", "12/15");
 				break;
 			case KAKAO_PAYMENT:
-				cart.pay("rolroralra", "password");
-				break;
 			case NAVER_PAYMENT:
 				cart.pay("rolroralra", "password");
 				break;
