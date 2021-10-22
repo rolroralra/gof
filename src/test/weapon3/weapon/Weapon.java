@@ -1,4 +1,4 @@
-package test.weapon3;
+package test.weapon3.weapon;
 
 import lombok.Getter;
 import lombok.Setter;

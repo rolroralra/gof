@@ -1,6 +1,5 @@
 package test.weapon3.activity;
 
-import test.weapon3.Weapon;
 import test.weapon3.magic.WeaponBuffMagicVisitor;
 
 public class Attack extends ActivityElement {

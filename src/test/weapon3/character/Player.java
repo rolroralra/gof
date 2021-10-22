@@ -1,16 +1,16 @@
-package test.weapon3.client;
+package test.weapon3.character;
 
 import lombok.Getter;
 import lombok.Setter;
-import test.weapon3.Weapon;
+import test.weapon3.weapon.Weapon;
 import test.weapon3.activity.ActivityElement;
 import test.weapon3.activity.Attack;
 import test.weapon3.activity.Equip;
-import test.weapon3.magic.WeaponBuffMagic;
 import test.weapon3.magic.WeaponBuffMagicVisitor;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Player {
     @Getter
@@ -52,6 +52,22 @@ public class Player {
         // Current Index Update
         this.currentWeaponIndex = weaponIndex;
         this.currentWeaponBuffMagicIndex = weaponBuffMagicIndex;
+    }
+
+    public void equipRandom() {
+        Random random = new Random();
+        int weaponRandomIndex = random.nextInt(weaponList.size());
+        int weaponBuffMagicRandomIndex = random.nextInt(weaponBuffMagicVisitorList.size());
+
+        equip(weaponRandomIndex, weaponBuffMagicRandomIndex);
+    }
+
+    public void attackRandom() {
+        Random random = new Random();
+        int weaponRandomIndex = random.nextInt(weaponList.size());
+        int weaponBuffMagicRandomIndex = random.nextInt(weaponBuffMagicVisitorList.size());
+
+        attack(weaponRandomIndex, weaponBuffMagicRandomIndex);
     }
 
     public void addWeapon(Weapon weapon) {

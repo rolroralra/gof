@@ -1,15 +1,18 @@
 package test.weapon3;
 
 import org.junit.jupiter.api.Test;
-import test.weapon3.client.Player;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+import test.weapon3.character.Player;
 import test.weapon3.magic.FlyingWeaponBuffMagic;
 import test.weapon3.magic.LifeStealWeaponBuffMagic;
 import test.weapon3.magic.LightWeaponBuffMagic;
-import test.weapon3.magic.WeaponBuffMagic;
+import test.weapon3.weapon.Spear;
+import test.weapon3.weapon.Sword;
 
 public class WeaponDriver {
     @Test
-    void test() {
+    void test_Weapon_Attack_Equip_With_BuffMagic() {
         Player player = new Player();
         player.addWeapon(new Spear());
         player.addWeapon(new Sword());
@@ -30,7 +33,23 @@ public class WeaponDriver {
             System.out.println();
         }
     }
-//
 
 
+    @ParameterizedTest
+    @ValueSource(ints = {5})
+    void test_Weapon_Attack_Equip_With_BuffMagic_Random(int count) {
+        Player player = new Player();
+        player.addWeapon(new Spear());
+        player.addWeapon(new Sword());
+
+        player.addWeaponBuffMagic(new FlyingWeaponBuffMagic());
+        player.addWeaponBuffMagic(new LifeStealWeaponBuffMagic());
+        player.addWeaponBuffMagic(new LightWeaponBuffMagic());
+
+        for (int i = 0; i < count; i++) {
+            player.equipRandom();
+            player.attackRandom();
+            System.out.println();
+        }
+    }
 }
