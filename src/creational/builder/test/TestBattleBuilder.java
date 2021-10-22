@@ -2,9 +2,11 @@ package creational.builder.test;
 
 import creational.builder.MealBuilder;
 import creational.builder.vo.*;
+import org.junit.jupiter.api.Test;
 
-public class MainBuilder {
-    public static void main(String[] args) {
+public class TestBattleBuilder {
+    @Test
+    public void test_Builder_Pattern() {
         MealBuilder mealBuilder = new MealBuilder();
 
         Meal meal01 = mealBuilder.addItem(new VegBurger()).addItem(new Sprite()).build();

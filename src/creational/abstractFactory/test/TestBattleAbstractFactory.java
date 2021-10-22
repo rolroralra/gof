@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
-public class MainAbstractFactory {
+public class TestBattleAbstractFactory {
     @Test
     public void test_Abstract_Factory_Pattern() {
         FactoryProducer factoryProducer = FactoryProducer.getInstance();

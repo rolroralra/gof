@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import structural.facade.ShapeFacade;
 import structural.facade.impl.ShapeFacadeImpl;
 
-public class MainFacade {
+public class TestBattleFacade {
     @Test
     public void test_Facade_Pattern() {
         ShapeFacade shapeFacade = new ShapeFacadeImpl();

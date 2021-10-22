@@ -1,9 +1,11 @@
 package creational.singleton.test;
 
 import creational.singleton.SingleObject;
+import org.junit.jupiter.api.Test;
 
-public class MainSingleton {
-    public static void main(String[] args) {
+public class TestBattleSingleton {
+    @Test
+    public void test_Singleton_Pattern() {
         SingleObject singleObject = SingleObject.getInstance();
 
         System.out.println(singleObject == SingleObject.getInstance());
