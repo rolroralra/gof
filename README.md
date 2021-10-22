@@ -48,8 +48,8 @@ Gang of Four(Java Design Pattern)
   - [x] [Builder (Creating Pattern using Strategy Pattern)](./src/creational/builder)
   - [x] [Prototype (Javascript Prototype)](./src/creational/prototype)
 - Structural
-  - [x] [Adapter](./src/structural/adapter)
-  - [x] [Bridge](./src/structural/bridge)
+  - [x] [Adapter (Adapter makes things work after they're designed.)](./src/structural/adapter)
+  - [x] [Bridge (Bridge makes them work before they are.)](./src/structural/bridge)
   - [x] [Decorator (Wrapper)](./src/structural/decorator)
   - [ ] Filter
   - [ ] Composite
@@ -63,7 +63,7 @@ Gang of Four(Java Design Pattern)
   - [X] [Iterator](./src/behavioral/iterator)
   - [X] [Mediator (Many Publisher, Many Subscriber, But Only One Mediator)](./src/behavioral/mediator)
   - [ ] Memento
-  - [X] [Observer](./src/behavioral/observer)
+  - [X] [Observer (Publisher & Subscriber, Observable & Observer, Subject & Observer)](./src/behavioral/observer)
   - [X] [State](./src/behavioral/state)
   - [ ] Null Object
   - [X] [Strategy](./src/behavioral/strategy)
