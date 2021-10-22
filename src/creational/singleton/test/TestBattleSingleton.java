@@ -1,19 +1,25 @@
 package creational.singleton.test;
 
-import creational.singleton.SingleObject;
+import creational.singleton.SingleTon;
+import creational.singleton.SingleTonWithSynchronized;
 import org.junit.jupiter.api.Test;
 
 public class TestBattleSingleton {
     @Test
     public void test_Singleton_Pattern() {
-        SingleObject singleObject = SingleObject.getInstance();
+        SingleTon singleTon = SingleTon.getInstance();
 
-        System.out.println(singleObject == SingleObject.getInstance());
-        System.out.println(singleObject);
-        System.out.println(SingleObject.getInstance());
+        System.out.println(singleTon == SingleTon.getInstance());
+        System.out.println(singleTon);
+        System.out.println(SingleTon.getInstance());
 
         // Compile Error
 //        SingleObject anotherObject = new SingleObject();
+
+        SingleTonWithSynchronized singleTonWithSynchronized = SingleTonWithSynchronized.getInstance();
+        System.out.println(singleTonWithSynchronized == SingleTonWithSynchronized.getInstance());
+        System.out.println(singleTonWithSynchronized);
+        System.out.println(SingleTonWithSynchronized.getInstance());
     }
 
 }

@@ -1,13 +1,17 @@
 package creational.singleton.lazyHolder.test;
 
-import creational.singleton.lazyHolder.SingleObject;
+import creational.singleton.lazyHolder.SingleTonWithLazyHolder;
+import org.junit.jupiter.api.Test;
 
 public class MainLazyHolder {
-    public static void main(String[] args) {
-        SingleObject singleObject = SingleObject.getInstance();
-        System.out.println(singleObject == SingleObject.getInstance());
-        System.out.println(singleObject);
-        System.out.println(SingleObject.getInstance());
+    @Test
+    public void test_Singleton_LazyHolder_Pattern() {
+        SingleTonWithLazyHolder singleTonWithLazyHolder = SingleTonWithLazyHolder.getInstance();
+        System.out.println(singleTonWithLazyHolder == SingleTonWithLazyHolder.getInstance());
+        System.out.println(singleTonWithLazyHolder);
+        System.out.println(SingleTonWithLazyHolder.getInstance());
+
+//        SingleTonWithLazyHolder another = new SingleTonWithLazyHolder();  // Compile Error
 
     }
 }

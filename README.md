@@ -45,7 +45,7 @@ Gang of Four(Java Design Pattern)
   - [x] [Factory (Delegation or Inheritance for object creation)](./src/creational/factory)
   - [x] [AbstractFactory (Delegation for object creation with FactoryGenerator, FactoryProducer)](./src/creational/abstractFactory)
   - [x] [Singleton & LazyHolder](./src/creational/singleton)
-  - [x] [Builder](./src/creational/builder)
+  - [x] [Builder (Creating Pattern using Strategy Pattern)](./src/creational/builder)
   - [x] [Prototype (Javascript Prototype)](./src/creational/prototype)
 - Structural
   - [x] [Adapter](./src/structural/adapter)
