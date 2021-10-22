@@ -42,8 +42,8 @@
 Gang of Four(Java Design Pattern)
 
 - Creational
-  - [x] [Factory](./src/creational/factory)
-  - [x] [AbstractFactory (with FactoryGenerator, FactoryProducer)](./src/creational/abstractFactory)
+  - [x] [Factory (Delegation or Inheritance for object creation)](./src/creational/factory)
+  - [x] [AbstractFactory (Delegation for object creation with FactoryGenerator, FactoryProducer)](./src/creational/abstractFactory)
   - [x] [Singleton & LazyHolder](./src/creational/singleton)
   - [x] [Builder](./src/creational/builder)
   - [x] [Prototype (Javascript Prototype)](./src/creational/prototype)
@@ -61,7 +61,7 @@ Gang of Four(Java Design Pattern)
   - [X] [Command (Command, Invoker, Receiver) - 행위의 객체화](./src/behavioral/command)
   - [ ] Interpreter
   - [X] [Iterator](./src/behavioral/iterator)
-  - [X] [Mediator](./src/behavioral/mediator)
+  - [X] [Mediator (Many Publisher, Many Subscriber, But Only One Mediator)](./src/behavioral/mediator)
   - [ ] Memento
   - [X] [Observer](./src/behavioral/observer)
   - [X] [State](./src/behavioral/state)

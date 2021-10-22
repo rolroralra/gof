@@ -2,9 +2,14 @@ package creational.abstractFactory.test;
 
 import creational.abstractFactory.AbstractFactory;
 import creational.abstractFactory.FactoryProducer;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+import java.util.NoSuchElementException;
 
 public class MainAbstractFactory {
-    public static void main(String[] args) {
+    @Test
+    public void test_Abstract_Factory_Pattern() {
         FactoryProducer factoryProducer = FactoryProducer.getInstance();
 
         AbstractFactory shapeFactory = factoryProducer.getFactory("Shape");
@@ -21,11 +26,14 @@ public class MainAbstractFactory {
         colorFactory.getColor("Blue").fill();
 
 
-        AbstractFactory dummyFactory = factoryProducer.getFactory("DUMMY");
+        Assertions.assertThatExceptionOfType(NoSuchElementException.class).isThrownBy(() -> {
+            AbstractFactory dummyFactory = factoryProducer.getFactory("DUMMY");
 
-        dummyFactory.getShape("Circle").draw();
-        dummyFactory.getShape("Rectangle").draw();
-        dummyFactory.getShape("SQUARE").draw();
+            dummyFactory.getShape("Circle").draw();
+            dummyFactory.getShape("Rectangle").draw();
+            dummyFactory.getShape("SQUARE").draw();
+        });
+
 
     }
 }
