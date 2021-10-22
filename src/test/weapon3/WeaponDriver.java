@@ -7,8 +7,10 @@ import test.weapon3.character.Player;
 import test.weapon3.magic.FlyingWeaponBuffMagic;
 import test.weapon3.magic.LifeStealWeaponBuffMagic;
 import test.weapon3.magic.LightWeaponBuffMagic;
+import test.weapon3.magic.WeaponBuffMagicVisitor;
 import test.weapon3.weapon.Spear;
 import test.weapon3.weapon.Sword;
+import test.weapon3.weapon.Weapon;
 
 public class WeaponDriver {
     @Test

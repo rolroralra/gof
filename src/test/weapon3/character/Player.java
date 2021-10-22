@@ -1,12 +1,11 @@
 package test.weapon3.character;
 
 import lombok.Getter;
-import lombok.Setter;
-import test.weapon3.weapon.Weapon;
 import test.weapon3.activity.ActivityElement;
 import test.weapon3.activity.Attack;
 import test.weapon3.activity.Equip;
 import test.weapon3.magic.WeaponBuffMagicVisitor;
+import test.weapon3.weapon.Weapon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +13,15 @@ import java.util.Random;
 
 public class Player {
     @Getter
-    @Setter
-    private List<Weapon> weaponList;
-    private List<WeaponBuffMagicVisitor> weaponBuffMagicVisitorList;
+    private final List<Weapon> weaponList;  // 무기 목록
+    @Getter
+    private final List<WeaponBuffMagicVisitor> weaponBuffMagicVisitorList;  // 무기 버프 마법 목록
 
     private int currentWeaponIndex;
     private int currentWeaponBuffMagicIndex;
 
-    private ActivityElement attack;
-    private ActivityElement equip;
+    private final ActivityElement attack;
+    private final ActivityElement equip;
 
     public Player() {
         weaponList = new ArrayList<>();
