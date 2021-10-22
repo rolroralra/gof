@@ -8,7 +8,11 @@ public abstract class AbstractLogger {
     protected AbstractLogger nextLogger;
 
     public enum LogLevel {
-        TRACE,DEBUG,INFO,WARNING,ERROR
+        TRACE,
+        DEBUG,
+        INFO,
+        WARNING,
+        ERROR
     }
 
     public AbstractLogger(LogLevel logLevel) {

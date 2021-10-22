@@ -1,5 +1,6 @@
 package test.potion;
 
+import org.junit.jupiter.api.Test;
 import test.potion.command.DetoxPotionCommand;
 import test.potion.command.HealSmallPotionCommand;
 import test.potion.command.HealMediumPotionCommand;
@@ -7,7 +8,8 @@ import test.potion.invoker.PotionBroker;
 import test.potion.receiver.Player;
 
 public class PotionClientDemo {
-	public static void main(String[] args) {
+	@Test
+	public void test() {
 		Player player = new Player();
 		
 		PotionBroker potionBroker = new PotionBroker();
@@ -16,19 +18,15 @@ public class PotionClientDemo {
 		potionBroker.addPotion(new DetoxPotionCommand(player));
 		potionBroker.addPotion(new DetoxPotionCommand(player));
 		
-		// ġ��20
-		potionBroker.getPotions();		
+		potionBroker.getPotions();
 		potionBroker.drink(1);		
 		
-		// Detox
-		potionBroker.getPotions();		
+		potionBroker.getPotions();
 		potionBroker.drink(1);
 		
-		// Detox
-		potionBroker.getPotions();		
+		potionBroker.getPotions();
 		potionBroker.drink(1);
 		
-		// ġ��10
 		potionBroker.getPotions();
 		potionBroker.drink(0);
 	}
