@@ -6,17 +6,5 @@ import test.weapon3.magic.WeaponBuffMagicVisitor;
 
 @Data
 public abstract class ActivityElement {
-    protected Weapon weapon;
-
-    public ActivityElement(Weapon weapon) {
-        this.weapon = weapon;
-    }
-
     abstract public void accept(WeaponBuffMagicVisitor weaponBuffMagicVisitor);
-    @Override
-    public String toString() {
-        return "ActivityElement{" +
-                "weapon=" + weapon +
-                '}';
-    }
 }

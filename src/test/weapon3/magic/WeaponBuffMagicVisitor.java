@@ -1,10 +1,10 @@
 package test.weapon3.magic;
 
-import test.weapon3.activity.AttackActivity;
-import test.weapon3.activity.EquipActivity;
+import test.weapon3.activity.Attack;
+import test.weapon3.activity.Equip;
 
 // Visitor Pattern
 public interface WeaponBuffMagicVisitor {
-    void visit(EquipActivity equipActivity);
-    void visit(AttackActivity attackActivity);
+    void visit(Equip equip);
+    void visit(Attack attack);
 }
