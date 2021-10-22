@@ -9,6 +9,6 @@ public class FileLogger extends AbstractLogger {
 
     @Override
     public void write(String message) {
-        System.out.printf("[%s] [%s] %s%n", this.getClass().getSimpleName(), this.logLevel, message);
+        System.out.printf("[%s] %s%n", this.getClass().getSimpleName(), message);
     }
 }
