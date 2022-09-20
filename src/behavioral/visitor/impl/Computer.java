@@ -3,14 +3,14 @@ package behavioral.visitor.impl;
 import behavioral.visitor.ComputerPart;
 import behavioral.visitor.ComputerPartVisitor;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Computer implements ComputerPart {
     private final List<ComputerPart> computerPartList;
 
     public Computer() {
-        this(Collections.emptyList());
+        this(new ArrayList<>());
     }
 
     public Computer(List<ComputerPart> computerPartList) {
