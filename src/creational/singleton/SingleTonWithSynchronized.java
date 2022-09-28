@@ -20,4 +20,14 @@ public class SingleTonWithSynchronized {
 
         return INSTANCE;
     }
+
+    public static SingleTonWithSynchronized getInstance2() {
+        if (INSTANCE == null) {
+            synchronized (SingleTonWithSynchronized.class) {
+                INSTANCE = new SingleTonWithSynchronized();
+            }
+        }
+
+        return INSTANCE;
+    }
 }
