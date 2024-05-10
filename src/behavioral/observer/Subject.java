@@ -13,12 +13,14 @@ public abstract class Subject {
             observers.add(observer);
         }
     }
+    
     public void removeObserver(Observer observer) {
         int index = observers.indexOf(observer);
         if (index >= 0) {
             observers.remove(index);
         }
     }
+    
     public void notifyObservers(Object ...args) {
         if (isChanged) {
             observers.forEach(observer -> observer.update(this, args));
